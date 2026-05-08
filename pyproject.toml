@@ -84,7 +84,7 @@ Documentation = "https://github.com/HKUDS/RAG-Anything/wiki"
 packages = ["raganything"]
 
 [tool.ruff]
-line-length = 88
+line-length = 100
 target-version = "py310"
 
 [tool.ruff.lint]
@@ -106,6 +106,8 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
+# show verbose output and print statements during test runs
+addopts = "-v -s"
 
 [tool.coverage.run]
 source = ["raganything"]
